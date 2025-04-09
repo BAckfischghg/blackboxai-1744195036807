@@ -6,37 +6,34 @@
     <title>Veranstaltungen | Bildungshilfe für Uganda</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Open Sans', sans-serif;
-        }
-        h1, h2, h3 {
-            font-family: 'Merriweather', serif;
         }
     </style>
 </head>
 <body class="bg-gray-50">
     <!-- Navigation -->
-    <nav class="bg-blue-800 text-white shadow-lg">
+    <nav class="bg-yellow-600 text-white shadow-lg">
         <div class="container mx-auto px-6 py-3">
             <div class="flex justify-between items-center">
-                <div class="text-2xl font-bold">
+                <div class="text-xl font-bold">
                     Bildungshilfe für Uganda
                 </div>
-                <div class="hidden md:flex space-x-8">
-                    <a href="index.html" class="hover:text-blue-200">Home</a>
-                    <a href="about.html" class="hover:text-blue-200">Wir über uns</a>
-                    <a href="statutes.html" class="hover:text-blue-200">Statuten</a>
-                    <a href="board.html" class="hover:text-blue-200">Vorstand</a>
-                    <a href="events.html" class="hover:text-blue-200 font-semibold">Veranstaltungen</a>
-                    <a href="projects.html" class="hover:text-blue-200">Projekte</a>
-                    <a href="gallery.html" class="hover:text-blue-200">Bilder</a>
-                    <a href="contact.html" class="hover:text-blue-200">Kontakt</a>
+                <div class="hidden md:flex space-x-4">
+                    <a href="index.html" class="hover:bg-yellow-700 px-3 py-2 rounded">Home</a>
+                    <a href="about.html" class="hover:bg-yellow-700 px-3 py-2 rounded">Wir über uns</a>
+                    <a href="statutes.html" class="hover:bg-yellow-700 px-3 py-2 rounded">Statuten</a>
+                    <a href="board.html" class="hover:bg-yellow-700 px-3 py-2 rounded">Vorstand</a>
+                    <a href="events.html" class="bg-yellow-700 px-3 py-2 rounded">Veranstaltungen</a>
+                    <a href="projects.html" class="hover:bg-yellow-700 px-3 py-2 rounded">Projekte</a>
+                    <a href="gallery.html" class="hover:bg-yellow-700 px-3 py-2 rounded">Bilder</a>
+                    <a href="contact.html" class="hover:bg-yellow-700 px-3 py-2 rounded">Kontakt</a>
                 </div>
                 <div class="md:hidden">
-                    <button class="mobile-menu-button">
-                        <i class="fas fa-bars text-2xl"></i>
+                    <button class="mobile-menu-button p-2">
+                        <i class="fas fa-bars text-xl"></i>
                     </button>
                 </div>
             </div>
@@ -45,173 +42,87 @@
 
     <!-- Main Content -->
     <main class="container mx-auto px-6 py-12">
-        <h1 class="text-4xl font-bold mb-12 text-center">Veranstaltungen</h1>
+        <h1 class="text-3xl font-bold mb-12 text-yellow-700">Veranstaltungen</h1>
         
-        <div class="max-w-4xl mx-auto">
-            <!-- Upcoming Events -->
-            <div class="mb-16">
-                <h2 class="text-2xl font-bold mb-6 pb-2 border-b border-gray-200">Kommende Veranstaltungen</h2>
-                
-                <!-- Event 1 -->
-                <div class="bg-white p-6 rounded-lg shadow-md mb-6">
-                    <div class="flex flex-col md:flex-row gap-6">
-                        <div class="md:w-1/4">
-                            <div class="bg-blue-100 text-blue-800 p-4 rounded-lg text-center">
-                                <div class="text-3xl font-bold">15</div>
-                                <div class="text-lg font-semibold">Juni</div>
-                                <div class="text-sm">2023</div>
-                            </div>
-                        </div>
-                        <div class="md:w-3/4">
-                            <h3 class="text-xl font-bold mb-2">Bildungsgala für Uganda</h3>
-                            <p class="text-gray-600 mb-3">
-                                <i class="fas fa-map-marker-alt mr-2"></i> Stadthalle, Musterstadt
-                            </p>
-                            <p class="mb-4">
-                                Unser jährlicher Charity-Abend mit Live-Musik, Auktionen und inspirierenden Berichten aus unseren Projekten. Der gesamte Erlös kommt dem Schulausbau in Kasenene zugute.
-                            </p>
-                            <a href="#" class="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Anmelden</a>
-                        </div>
+        <!-- Current Event -->
+        <section class="mb-16">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <div class="md:flex">
+                    <div class="md:w-1/3">
+                        <img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
+                             alt="Advent Spendenaktion" 
+                             class="w-full h-full object-cover">
                     </div>
-                </div>
-
-                <!-- Event 2 -->
-                <div class="bg-white p-6 rounded-lg shadow-md mb-6">
-                    <div class="flex flex-col md:flex-row gap-6">
-                        <div class="md:w-1/4">
-                            <div class="bg-blue-100 text-blue-800 p-4 rounded-lg text-center">
-                                <div class="text-3xl font-bold">02</div>
-                                <div class="text-lg font-semibold">Juli</div>
-                                <div class="text-sm">2023</div>
-                            </div>
+                    <div class="p-8 md:w-2/3">
+                        <div class="flex items-center mb-4">
+                            <span class="bg-yellow-100 text-yellow-800 text-xs font-semibold px-3 py-1 rounded-full">Aktuell</span>
+                            <span class="ml-4 text-gray-500"><i class="far fa-calendar-alt mr-2"></i>Dezember 2024</span>
                         </div>
-                        <div class="md:w-3/4">
-                            <h3 class="text-xl font-bold mb-2">Uganda-Tag: Kultur und Begegnung</h3>
-                            <p class="text-gray-600 mb-3">
-                                <i class="fas fa-map-marker-alt mr-2"></i> Stadtpark, Musterstadt
-                            </p>
-                            <p class="mb-4">
-                                Ein Tag voller Musik, Tanz und kulinarischer Spezialitäten aus Uganda. Lernen Sie mehr über die Kultur des Landes und treffen Sie Mitglieder unseres Vereins.
-                            </p>
-                            <a href="#" class="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Mehr erfahren</a>
+                        <h2 class="text-2xl font-bold mb-4 text-yellow-700">Advent Spendenaktion</h2>
+                        <p class="mb-4">
+                            In Zusammenarbeit mit dem GRG 16 Maroltingergasse Wien veranstalten wir eine besondere Spendenaktion in der Adventszeit zur Unterstützung der "Cause of our Joy Junior School" in Kasenene, Uganda.
+                        </p>
+                        <div class="mb-6">
+                            <h3 class="font-bold mb-2">Ziele der Aktion:</h3>
+                            <ul class="list-disc pl-6 space-y-1">
+                                <li>Ausbau der Schulgebäude</li>
+                                <li>Finanzierung von Lehrergehältern</li>
+                                <li>Bereitstellung von Lernmaterialien</li>
+                                <li>Medizinische Grundversorgung der Schüler</li>
+                            </ul>
+                        </div>
+                        <div class="mb-6">
+                            <h3 class="font-bold mb-2">Details zur Aktion:</h3>
+                            <p>Die Schülerinnen und Schüler des GRG 16 organisieren verschiedene Aktivitäten wie:</p>
+                            <ul class="list-disc pl-6 space-y-1 mt-2">
+                                <li>Weihnachtsbasare</li>
+                                <li>Kuchenverkäufe</li>
+                                <li>Kreativworkshops</li>
+                            </ul>
+                        </div>
+                        <div class="flex flex-wrap gap-4">
+                            <a href="contact.html" class="bg-yellow-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-yellow-700 transition">Jetzt spenden</a>
+                            <a href="https://maroltingergasse.at/2024/01/25/adventprojekt-2023-24/" class="border border-yellow-600 text-yellow-700 px-6 py-2 rounded-lg font-semibold hover:bg-yellow-50 transition">Mehr über die Aktion</a>
                         </div>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <!-- Past Events -->
-            <div>
-                <h2 class="text-2xl font-bold mb-6 pb-2 border-b border-gray-200">Vergangene Veranstaltungen</h2>
-                
-                <!-- Past Event 1 -->
-                <div class="bg-white p-6 rounded-lg shadow-md mb-6 opacity-75">
-                    <div class="flex flex-col md:flex-row gap-6">
-                        <div class="md:w-1/4">
-                            <div class="bg-gray-200 text-gray-600 p-4 rounded-lg text-center">
-                                <div class="text-3xl font-bold">12</div>
-                                <div class="text-lg font-semibold">Mai</div>
-                                <div class="text-sm">2023</div>
-                            </div>
-                        </div>
-                        <div class="md:w-3/4">
-                            <h3 class="text-xl font-bold mb-2">Vortrag: Bildung in Uganda</h3>
-                            <p class="text-gray-600 mb-3">
-                                <i class="fas fa-map-marker-alt mr-2"></i> Stadtbibliothek, Musterstadt
-                            </p>
-                            <p class="mb-4">
-                                Unser Vorstandsmitglied Julia Hoffmann berichtete über ihre Erfahrungen vor Ort und die Herausforderungen des ugandischen Bildungssystems.
-                            </p>
-                            <a href="gallery.html" class="inline-block bg-gray-600 text-white px-4 py-2 rounded hover:bg-gray-700">Bilder ansehen</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Past Event 2 -->
-                <div class="bg-white p-6 rounded-lg shadow-md mb-6 opacity-75">
-                    <div class="flex flex-col md:flex-row gap-6">
-                        <div class="md:w-1/4">
-                            <div class="bg-gray-200 text-gray-600 p-4 rounded-lg text-center">
-                                <div class="text-3xl font-bold">22</div>
-                                <div class="text-lg font-semibold">April</div>
-                                <div class="text-sm">2023</div>
-                            </div>
-                        </div>
-                        <div class="md:w-3/4">
-                            <h3 class="text-xl font-bold mb-2">Frühlingsbasar</h3>
-                            <p class="text-gray-600 mb-3">
-                                <i class="fas fa-map-marker-alt mr-2"></i> Gemeindehaus, Musterstadt
-                            </p>
-                            <p class="mb-4">
-                                Unser traditioneller Basar mit handgefertigten Artikeln und kulinarischen Köstlichkeiten. Der Erlös von €2.350 kommt unserem Mahlzeitenprogramm zugute.
-                            </p>
-                            <a href="gallery.html" class="inline-block bg-gray-600 text-white px-4 py-2 rounded hover:bg-gray-700">Bilder ansehen</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Newsletter -->
-            <div class="mt-12 bg-blue-50 p-8 rounded-lg">
-                <h2 class="text-2xl font-bold mb-4 text-center">Verpassen Sie keine Veranstaltung</h2>
-                <p class="mb-6 text-center">
-                    Melden Sie sich für unseren Newsletter an und bleiben Sie über kommende Events informiert.
+        <!-- Past Events -->
+        <section>
+            <h2 class="text-2xl font-bold mb-8 text-yellow-700">Vergangene Veranstaltungen</h2>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <p class="text-center text-gray-500">
+                    Weitere Informationen zu vergangenen Veranstaltungen folgen in Kürze.
                 </p>
-                <form class="max-w-md mx-auto">
-                    <div class="flex">
-                        <input type="email" placeholder="Ihre E-Mail-Adresse" 
-                               class="flex-grow px-4 py-2 rounded-l-lg focus:outline-none">
-                        <button type="submit" 
-                                class="bg-blue-600 text-white px-6 py-2 rounded-r-lg hover:bg-blue-700">
-                            Anmelden
-                        </button>
-                    </div>
-                </form>
             </div>
-        </div>
+        </section>
     </main>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-12">
+    <footer class="bg-gray-800 text-white py-8">
         <div class="container mx-auto px-6">
-            <div class="grid md:grid-cols-4 gap-8">
-                <div>
-                    <h3 class="text-xl font-bold mb-4">Bildungshilfe für Uganda</h3>
-                    <p>Ein Fundament für morgen</p>
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p>Bildungshilfe für Uganda: Ein Fundament für morgen</p>
+                    <p>ZVR-Zahl: 1950359624</p>
                 </div>
                 <div>
-                    <h4 class="font-bold mb-4">Kontakt</h4>
-                    <p><i class="fas fa-envelope mr-2"></i> info@bildungshilfe-uganda.org</p>
-                </div>
-                <div>
-                    <h4 class="font-bold mb-4">Quick Links</h4>
-                    <ul class="space-y-2">
-                        <li><a href="events.html" class="hover:text-blue-300">Veranstaltungen</a></li>
-                        <li><a href="projects.html" class="hover:text-blue-300">Projekte</a></li>
-                        <li><a href="contact.html" class="hover:text-blue-300">Kontakt</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-bold mb-4">Folgen Sie uns</h4>
-                    <div class="flex space-x-4">
-                        <a href="#" class="text-2xl hover:text-blue-300"><i class="fab fa-facebook"></i></a>
-                        <a href="#" class="text-2xl hover:text-blue-300"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="text-2xl hover:text-blue-300"><i class="fab fa-twitter"></i></a>
-                    </div>
+                    <a href="contact.html" class="hover:text-yellow-400">Kontakt</a>
                 </div>
             </div>
-            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
-                <p>&copy; 2023 Bildungshilfe für Uganda. Alle Rechte vorbehalten.</p>
+            <div class="border-t border-gray-700 mt-6 pt-6 text-center text-sm">
+                <p>&copy; 2024 Bildungshilfe für Uganda. Alle Rechte vorbehalten.</p>
             </div>
         </div>
     </footer>
 
     <script>
-        // Mobile menu toggle
+        // Mobile menu functionality
         const mobileMenuButton = document.querySelector('.mobile-menu-button');
-        const mobileMenu = document.querySelector('.mobile-menu');
-        
         mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
+            alert('Mobile menu will be implemented');
         });
     </script>
 </body>
